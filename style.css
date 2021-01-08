@@ -1,0 +1,77 @@
+/* style table */
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    padding: 2px;
+    
+    position:relative;    
+  }
+
+  input {
+    border: none;
+}
+
+
+.global-cell{
+
+    border: 2px solid rgb(216, 216, 216);
+    margin-bottom: 10px;
+    width: 20%;
+    padding: 3px;
+}
+
+.input-cell-border{
+    border: 1px solid rgb(23, 96, 231) !important;
+}
+
+.cell-input, .formula-output{
+  font-family:'Helvetica, Arial, serif';
+  font-size:14px;
+  height:18px;
+  padding:2px;
+  margin:0;
+  line-height:1;
+  display: flex;
+  align-items: center;
+  border:1px solid transparent;
+}
+
+.formula-output{  
+  position:absolute;
+  top:3px;
+  left:2px;
+  pointer-events:none;
+}
+
+.cell-input:focus{
+  outline:none;
+}
+.cell-input.is-formula{
+  color:transparent;
+ 
+}
+.cell-input.is-formula:focus{
+  color:black;
+}
+.cell-input.is-formula:focus + .formula-output{
+  color: transparent;
+  
+}
+
+.cell-input.input-cell-border.is-formula{
+  color:black;
+}
+
+.cell-input.input-cell-border.is-formula + .formula-output{
+  color:transparent;
+}
+
+.letters{
+  text-transform: uppercase;
+  text-align: center;
+}
